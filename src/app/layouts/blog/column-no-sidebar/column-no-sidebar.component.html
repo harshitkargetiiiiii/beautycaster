@@ -1,0 +1,75 @@
+<header class="resume loding-header nav-abs custom-scroll">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                  <nav>
+                          <app-menu></app-menu>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+<section class="agency blog blog-sec">
+    <div class="container no-side">
+        <div class="row">
+            <div class="col-xl-4 col-md-6" *ngFor="let blog of blogData">
+                <div class="blog-agency">
+                    <div class="blog-contain">
+                        <img [src]="blog.img" alt="" class="img-fluid">
+                        <div class="img-container center-content">
+                            <div class="center-content">
+                                <div class="blog-info">
+                                    <div class="m-b-20">
+                                        <div class="center-text">
+                                            <i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>
+                                            <h6 class="m-r-25 font-blog">{{blog.date}}</h6>
+                                            <i class="fa fa-map-marker m-r-10" aria-hidden="true"></i>
+                                            <h6 class="font-blog">{{blog.type}}</h6>
+                                        </div>
+                                    </div>
+                                    <h5 class="blog-head font-600">{{blog.title}}</h5>
+                                    <p class="para2">{{blog.content}}</p>
+                                    <div class="btn-bottom m-t-20">
+                                        <a href="#" class="text-uppercase">{{blog.btn}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="resume copyright copyright-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="link link-horizontal">
+                    <ul class="justify-content-center">
+                        <li><a href="javascript:void(0)" class="copyright-text">home</a></li>
+                        <!-- <li><a href="javascript:void(0)" class="copyright-text">couple</a></li>
+                        <li><a href="javascript:void(0)" class="copyright-text">invitation</a></li>
+                        <li><a href="javascript:void(0)" class="copyright-text">album </a></li> -->
+                        <li><a href="javascript:void(0)" class="copyright-text">friends say</a></li>
+                        <li><a href="javascript:void(0)" class="copyright-text">gift</a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="col-12">
+                <div class="text-center">
+                    <div class="social-link link-horizontal">
+                        <ul class="justify-content-center">
+                            <li><a href="javascript:void(0)" class="copyright-text"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)" class="copyright-text"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)" class="copyright-text"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)" class="copyright-text "><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
